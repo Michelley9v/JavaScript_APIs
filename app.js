@@ -14,7 +14,7 @@ let gifEle = document.querySelector("#imageContainer > img");
 
 
 //event Handlers
-searchBtn.addEventListener ("click", (event) => {
+searchBtn.addEventListener ("click", ()  => {
     getGif(searchInput.value);
 });
 
@@ -36,8 +36,9 @@ async function getGif(searchTerm) {
    try {
     let res = await fetch(`${GIPHY_URL}?api_key=${GIPHY_KEY}&s=${searchInput.value}`)
     let body = await res.json();
+    console.log(body)
     //show the gif on the dom
-    gifEle.src = body.date.image.original.url;
+    gifEle.src = body.data.images.original.url;
    } catch (err) {
     console.error(err);
     //show the error message on the dom
