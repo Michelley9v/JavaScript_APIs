@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript APIs</title>
+    <link rel="stylesheet" href="./css " />
+    <script src = "./JavaScript_APIS" defer></script>
   </head>
   <body>
     <main
@@ -26,16 +28,19 @@
           <button id="submitSearch">Giphy by Search</button>
         </div>
 
-        <div id="imageContainer" style="max-width: 680px">
+        <div id="imageContainer" class= "hidden">
+          <div class="gifOptions">
+            <button id="saveBtn">Save for later</button>
+           </div>
           <img
             src="#"
             alt="Giphy Selection"
-            style="width: 100%; height: auto"
+            class="img-fluid"
           />
         </div>
+        <div id="savedGifs"></div>
       </div>
     </main>
-
-    <script src="app.js"></script>
+   <script src="app.js"></script>
   </body>
 </html>

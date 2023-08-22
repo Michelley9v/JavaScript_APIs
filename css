@@ -2,7 +2,7 @@
     max-width: 680px;
 }
 
-#imageContainer > img {
+.img-fluid {
     width: 100%
     height: auto;
 }
