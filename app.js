@@ -58,9 +58,10 @@ async function getGif(searchTerm) {
     let body = await res.json();
 console.log (body)
     if (body.data instanceof Array && body.data.length == 0) {
-      throw new Error('no results for ${searchTerm"} ' );
+      throw new Error('"no results for ${searchTerm} "' );
     }
-    
+    //hide feedback
+    feedbackEle.textContent = "";
     //show the gif on the dom
     gifEle.src = body.data.images.original.url;
     // update the alt value

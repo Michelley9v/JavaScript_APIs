@@ -8,21 +8,24 @@
     <script src = "./JavaScript_APIS" defer></script>
   </head>
   <body>
-    <main
-      style="
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-      "
-    >
+    <main>
       <div>
         <h1>JavaScript APIs</h1>
         <p id="feedback">
-          Open the Browser Console to view your work (Right-Click => Inspect or
-          fn+F12)
-        </p>
+        <form id= "inputContainer">
+          <label for= "searchWord"> Giphy
+            Search:</label>
+          <input style= "margin: 2rem"
+        type="text" id="searchWord" />
+      <button id="submitSearch"> Giphy by
+        Search</button>
+      </form>
+        
         <div id="inputContainer">
+          class="hidden">
+          <div class="gifOption">
+            <button id="saveBtn">Save for later>
+          </div>
           <label for="searchWord">Giphy Search:</label>
           <input style="margin: 2rem" type="text" id="searchWord" />
           <button id="submitSearch">Giphy by Search</button>

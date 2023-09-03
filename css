@@ -1,3 +1,15 @@
+
+style="
+        display: flex;
+        
+        align-items: stretch;
+        
+      "
+.col6{    }
+flex-basis: 50%
+
+
+
 #imageContainer {
     max-width: 680px;
 }
